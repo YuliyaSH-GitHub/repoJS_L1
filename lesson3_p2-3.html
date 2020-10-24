@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    var goods = [
+        {
+            title: "Товар 1",
+            price: 100,
+            amount: 10
+        },
+        {
+            title: "Товар 2",
+            price: 200,
+            amount: 15
+        },
+        {
+            title: "Товар 3",
+            price: 300,
+            amount: 20
+        }
+    ]   
+    for(good of goods){
+        console.log(good.title + " - цена единицы товара: "+good.price+ " количество: "+good.amount+"\n");
+    }
+    // function getSum(mas){
+    //     var s = 0;
+    //     for(item of mas){
+    //         s = s + item.price;
+    //     }
+    //     return s;
+    // }
+    // alert(getSum(goods)); 
+
+
+    function countBasketPrice(mas){
+        var s = 0;
+        for(item of mas){
+            s = s + item.price*item.amount;
+        }
+        return s;
+    }
+    alert("Cтоимость корзины= " + countBasketPrice(goods)); 
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
