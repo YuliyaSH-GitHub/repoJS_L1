@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // Задание 1
+   var object = {};
+    function f(n) {
+    var mas=n.split('');
+    object.unit=mas[2];
+    object.ten=mas[1];
+    object.hund=mas[0];
+    console.log(object);
+   }
+   var n=prompt("Введите число от 0 до 999: ");
+   if (n > 999) {
+    console.log("Число превышает 999 " + object);
+
+   }
+   else {
+    var object = new f(n);
+   }
+  
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
