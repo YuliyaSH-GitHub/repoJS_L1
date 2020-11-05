@@ -1,0 +1,19 @@
+* {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+#gallery {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.image_small {
+height: 200px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
