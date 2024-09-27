@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // мой вариант решения, который не работает(((
+        var num=2;
+        while (num < 100) {
+            for (var i=2, j=Math.sqrt(num); i <= j; i++) {
+                if (num % i !== 0) {
+                console.log(num);
+                }
+            }
+            num++;
+        }
+
+    // вариант решения, предложенный наставником
+        var num = 100;
+        nextNum:
+        for (var i = 2; i <= num; i++) {
+            for (var j = 2; j < i; j++) {
+            if (i % j == 0) continue nextNum;
+            }
+        console.log(i);
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
